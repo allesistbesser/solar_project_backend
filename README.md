@@ -1,7 +1,6 @@
 <!-- Please update value in the {}  -->
 
-<h1 align="center">Solar Project B
-aAckend</h1>
+<h1 align="center">Solar Project Backend</h1>
 
 
 <div align="center">
