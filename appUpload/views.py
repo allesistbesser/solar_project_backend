@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render , redirect
 from django.http.response import HttpResponse
 from .serilaziers import CommentSerializer , ProductsSerializer
 from rest_framework.views import APIView
@@ -7,8 +7,10 @@ from rest_framework import status
 from .models import Comment , Products
 
 def home(request):
-    return HttpResponse("Hallo Welt")
-    # return render(request, 'home.html')
+    response = redirect('http://minisolarsysteme.de/test/')
+    return response
+    # return HttpResponse("Hallo Welt")
+    # return render(request, 'index.html')
 
 def download_file(request):
     # # Define Django project base directory
