@@ -16,7 +16,7 @@ class Comment(models.Model):
   status = models.CharField(max_length=10 , choices=STATUS, default="Draft")
   
   def __str__(self):
-    return f'{self.first_name} - {self.last_name} - {self.subject}'
+    return f'{self.first_name} - {self.last_name} - {self.subject} - {self.publish_date}'
   
 class Products(models.Model):
   title1 = models.CharField(max_length=20)
